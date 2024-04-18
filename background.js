@@ -10,13 +10,13 @@ chrome.runtime.onMessage.addListener(async(message, sender, sendResponse) => {
       })
     }
   })
-  chrome.runtime.onMessage.addListener(async(message, sender, sendResponse) => {
+//   chrome.runtime.onMessage.addListener(async(message, sender, sendResponse) => {
 
-    if (message.action === 'openfeed') {
-   await chrome.tabs.query({ active: true, currentWindow: true },async (tabs) => {
-        const activeTab = tabs[0];
-        const url = 'https://linkedin.com/feed/'
-    await  chrome.tabs.create({url,active:true});
-      })
-    }
-  })
+//     if (message.action === 'openfeed') {
+//    await chrome.tabs.query({ active: true, currentWindow: true },async (tabs) => {
+//         const activeTab = tabs[0];
+//         const url = 'https://linkedin.com/feed/'
+//     await  chrome.tabs.create({url,active:true});
+//       })
+//     }
+//   })

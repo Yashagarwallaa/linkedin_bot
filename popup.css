@@ -16,11 +16,6 @@ h1{
     /* font-style:oblique; */
     font-weight:900;
 }
-.submit_btn:hover{
-    padding: 8px;
-   
-   font-weight: 900;
-}
 .extension-alert{
     color: #FFFFFF;
     font-style: italic;

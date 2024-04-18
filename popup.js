@@ -9,7 +9,7 @@ async function getCurrentTab(){
     if (tab.url.startsWith('https://www.linkedin.com/feed/')){
                 document.querySelector('.extension-alert').style.display = "none";
                 document.querySelector('.extension-form').style.display = "block";
-                document.querySelector('.feed_btn').style.display = "none";
+                // document.querySelector('.feed_btn').style.display = "none";
     // const name = document.querySelector('.text-heading-xlarge inline t-24 v-align-middle break-words');
     // console.log(name);
      form_extension.addEventListener('submit',async function (event)  {
@@ -20,10 +20,10 @@ async function getCurrentTab(){
        await chrome.runtime.sendMessage({ action: "startaction" ,comment_count:comment_count,like_count:like_count});
       });
      
-      feed_btn.addEventListener('click', () => {
-        chrome.runtime.sendMessage({ action: "openfeed" });
+    //   feed_btn.addEventListener('click', () => {
+    //     chrome.runtime.sendMessage({ action: "openfeed" });
         
-      });
+    //   });
 
     }}
 getCurrentTab(); 
