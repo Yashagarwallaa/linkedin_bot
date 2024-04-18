@@ -1,3 +1,36 @@
+body{
+    background-color: #0A66C2;
+    padding: 1rem;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+.submit_btn{
+    width: 120px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    /* font-style:oblique; */
+    font-weight:900;
+}
+.submit_btn:hover{
+    padding: 8px;
+   
+   font-weight: 900;
+}
+.extension-alert{
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: 500;
+}
+label {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-style: oblique;
+}
 .extension-form{
     display:none;
 }
